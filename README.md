@@ -29,4 +29,4 @@ You can see the routing settings in my [`src/app/app.routes.ts`](src/app/app.rou
 
 ## Note
 
-This project was created with Nx, but I am facing the same issue in a pure Angular app (generated with `ng new`) as well.
+This project was created with Nx, but I am facing the same issue in a pure Angular app (generated with `ng new`) as well. [Here](https://github.com/mandarini/ng-deeplinks-i18n) is the pure Angular example.
