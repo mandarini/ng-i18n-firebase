@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'deeplinktest-venues',
+  selector: 'deeplinktest-three',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './venues.component.html',
-  styleUrl: './venues.component.scss',
+  templateUrl: './three.component.html',
+  styleUrl: './three.component.scss',
 })
-export class VenuesComponent {}
+export class ThreeComponent {}

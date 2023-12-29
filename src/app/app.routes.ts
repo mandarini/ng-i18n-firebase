@@ -1,47 +1,42 @@
 import { Route } from '@angular/router';
 import { guestGuard } from './guest.guard';
 import { MainComponent } from './contents/main/main.component';
-import { AccommodationComponent } from './contents/accommodation/accommodation.component';
-import { GettingThereComponent } from './contents/getting-there/getting-there.component';
-import { ScheduleComponent } from './contents/schedule/schedule.component';
-import { VenuesComponent } from './contents/venues/venues.component';
+import { OneComponent } from './contents/one/one.component';
+import { TwoComponent } from './contents/two/two.component';
+import { ThreeComponent } from './contents/three/three.component';
 
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'wedding',
+    redirectTo: 'main',
     pathMatch: 'full',
   },
   {
     path: 'el',
-    redirectTo: 'wedding',
+    redirectTo: 'main',
     pathMatch: 'full',
   },
   {
     path: 'en',
-    redirectTo: 'wedding',
+    redirectTo: 'main',
     pathMatch: 'full',
   },
   {
-    path: 'wedding',
+    path: 'main',
     component: MainComponent,
     canActivate: [guestGuard],
     children: [
       {
-        path: 'accommodation',
-        component: AccommodationComponent,
+        path: 'one',
+        component: OneComponent,
       },
       {
-        path: 'getting-to-koufonisi',
-        component: GettingThereComponent,
+        path: 'two',
+        component: TwoComponent,
       },
       {
-        path: 'venues',
-        component: VenuesComponent,
-      },
-      {
-        path: 'schedule',
-        component: ScheduleComponent,
+        path: 'three',
+        component: ThreeComponent,
       },
     ],
   },

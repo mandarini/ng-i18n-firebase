@@ -6,10 +6,10 @@
   "sourceRoot": "./src",
   "tags": [],
   "i18n": {
-    "sourceLocale": "el",
+    "sourceLocale": "en",
     "locales": {
-      "en": {
-        "translation": "src/locale/messages.en-US.json",
+      "el": {
+        "translation": "src/locale/messages.el.json",
         "baseHref": ""
       }
     }
@@ -56,8 +56,8 @@
           "extractLicenses": false,
           "sourceMap": true
         },
-        "en": {
-          "localize": ["en"]
+        "el": {
+          "localize": ["el"]
         }
       },
       "defaultConfiguration": "production"
@@ -71,8 +71,8 @@
         "development": {
           "buildTarget": "deeplinktest:build:development"
         },
-        "en": {
-          "buildTarget": "deeplinktest:build:development,en"
+        "el": {
+          "buildTarget": "deeplinktest:build:development,el"
         }
       },
       "defaultConfiguration": "development"

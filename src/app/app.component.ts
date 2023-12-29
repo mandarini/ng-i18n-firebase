@@ -13,13 +13,13 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'deeplinktest';
-  userIsLoggedIn$ = this.authService.userIsLoggedIn();
+  userIsLoggedIn = this.authService.userIsLoggedIn();
   password = '';
 
   constructor(private authService: AuthenticationService) {}
 
   login() {
     this.authService.login(this.password);
-    this.userIsLoggedIn$ = this.authService.userIsLoggedIn();
+    this.userIsLoggedIn = this.authService.userIsLoggedIn();
   }
 }
