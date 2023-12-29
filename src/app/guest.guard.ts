@@ -1,13 +1,9 @@
+import { inject } from '@angular/core';
 import { CanActivateFn } from '@angular/router';
+import { AuthenticationService } from './services/authentication.service';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const guestGuard: CanActivateFn = async (route, state) => {
-  const password = localStorage.getItem('userpassword');
-  const passwordFromService = 'hello';
-
-  if (password === passwordFromService) {
-    return true;
-  }
-
-  return false;
+  const authService = inject(AuthenticationService);
+  return authService.userIsLoggedIn();
 };

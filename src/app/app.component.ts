@@ -12,14 +12,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'deeplinktest';
-  userIsLoggedIn = this.authService.userIsLoggedIn();
   password = '';
 
   constructor(private authService: AuthenticationService) {}
 
   login() {
-    this.authService.login(this.password);
-    this.userIsLoggedIn = this.authService.userIsLoggedIn();
+    this.authService.login();
   }
 }

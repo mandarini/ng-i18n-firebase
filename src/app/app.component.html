@@ -1,20 +1,12 @@
 <div class="language-selection">
-  <a target="_parent" href="https://test-ng-deeplinks.web.app/el" i18n>Ελληνικά</a>
-  <a target="_parent" href="https://test-ng-deeplinks.web.app/en" i18n>English</a>
+  <a target="_parent" href="https://ng-i18n-deeplinks.web.app/el" i18n
+    >Ελληνικά</a
+  >
+  <a target="_parent" href="https://ng-i18n-deeplinks.web.app/en" i18n
+    >English</a
+  >
 </div>
 <h1 i18n>Welcome to home.</h1>
-<ng-container *ngIf="userIsLoggedIn">
-  <p i18n>Log in, password is "hello".</p>
-  <form (ngSubmit)="login()">
-    <label for="password" i18n>Password:</label>
-    <input
-      type="password"
-      id="password"
-      [(ngModel)]="password"
-      name="password"
-      required
-    />
-    <button type="submit" i18n>Enter</button>
-  </form>
-</ng-container>
+<p i18n>Log in</p>
+<button (click)="login()" type="submit" i18n>Enter</button>
 <router-outlet></router-outlet>

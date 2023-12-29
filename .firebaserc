@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "test-ng-deeplinks"
+    "default": "ng-i18n-deeplinks"
   },
   "targets": {
-    "test-ng-deeplinks": {
+    "ng-i18n-deeplinks": {
       "hosting": {
         "deeplinktest": [
-          "test-ng-deeplinks"
+          "ng-i18n-deeplinks"
         ]
       }
     }
