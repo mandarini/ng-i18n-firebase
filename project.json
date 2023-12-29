@@ -6,10 +6,7 @@
   "sourceRoot": "./src",
   "tags": [],
   "i18n": {
-    "sourceLocale": {
-      "code": "en",
-      "baseHref": ""
-    },
+    "sourceLocale": "en",
     "locales": {
       "el": {
         "translation": "src/locale/messages.el.json",
@@ -74,8 +71,8 @@
         "development": {
           "buildTarget": "deeplinktest:build:development"
         },
-        "el": {
-          "buildTarget": "deeplinktest:build:development,el"
+        "en": {
+          "buildTarget": "deeplinktest:build:development,en"
         }
       },
       "defaultConfiguration": "development"
