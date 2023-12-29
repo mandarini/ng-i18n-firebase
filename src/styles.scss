@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4e1e1; /* light pink */
+  color: #305959; /* dark turquoise for contrast */
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  color: #3ab7bf; /* Turquoise color for the links */
+  text-decoration: none; /* Removes the underline */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #d63384; /* A contrasting color for hover, like a deeper pink */
+}
+
+a:active {
+  color: #305959; /* Darker turquoise for the active state */
+}

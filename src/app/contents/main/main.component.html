@@ -1,0 +1,31 @@
+<h2 i18n>Αυτό είναι το site του γάμου μας.</h2>
+
+<p i18n>7 Σεπτεμβρίου 2024</p>
+<p i18n>
+  Τοποθεσία:
+  <a href="https://maps.app.goo.gl/6KBpCiYuS9GShYWX9" target="_blank"
+    >Άνω Κουφονήσι</a
+  >
+</p>
+
+<div class="wedding-info-links">
+  <a class="info-link" (click)="navigate('accommodation')" i18n>Διαμονή</a>
+  <a class="info-link" (click)="navigate('getting-to-koufonisi')" i18n
+    >Πώς θα φτάσετε στο Κουφονήσι</a
+  >
+  <a class="info-link" (click)="navigate('venues')" i18n
+    >Χώροι των εκδηλώσεων</a
+  >
+  <a class="info-link" (click)="navigate('schedule')" i18n>Πρόγραμμα</a>
+  <a
+    class="info-link"
+    href="https://forms.gle/UDRTTLLzYVjDU7FS8"
+    target="_blank"
+    i18n
+    >RSVP</a
+  >
+</div>
+
+<p class="loading" i18n>Περισσότερες πληροφορίες σύντομα!</p>
+
+<router-outlet></router-outlet>

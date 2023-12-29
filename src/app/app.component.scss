@@ -1,0 +1,65 @@
+h1 {
+  font-size: 2.2em;
+  color: #3ab7bf; /* turquoise */
+  margin-bottom: 0.5em;
+}
+
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+label,
+input {
+  display: block;
+  margin: 10px auto;
+  font-size: 1em;
+}
+
+input[type='password'] {
+  padding: 10px;
+  border: 2px solid #3ab7bf; /* turquoise border */
+  border-radius: 5px;
+  width: 80%;
+}
+
+button {
+  background-color: #3ab7bf; /* turquoise */
+  color: white;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #33a0a8; /* slightly darker turquoise for hover */
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
+
+.language-selection {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.language-selection a {
+  margin: 0 10px;
+  color: #3ab7bf; /* Turquoise color for the links */
+  text-decoration: none;
+}
+
+.language-selection a:hover {
+  text-decoration: underline;
+}

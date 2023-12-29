@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "katastasis-wed"
+  },
+  "targets": {
+    "katastasis-wed": {
+      "hosting": {
+        "katastasis": [
+          "katastasis-wed"
+        ]
+      }
+    }
+  }
+}

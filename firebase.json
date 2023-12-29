@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "public": "dist/katastasis/browser",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "i18n": {
+        "root": "/"
+      },
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "target": "katastasis",
+      "frameworksBackend": {}
+    }
+  ]
+}

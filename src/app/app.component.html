@@ -1,0 +1,26 @@
+<div class="language-selection">
+  <a target="_parent" href="https://katastasis.com/el" i18n>Ελληνικά</a>
+  <a target="_parent" href="https://katastasis.com/en" i18n>English</a>
+</div>
+<h1 i18n>Καλωσήρθατε στο Καταστάσης!</h1>
+<ng-container
+  *ngIf="
+    (userIsLoggedIn$ | async) === false ||
+    (userIsLoggedIn$ | async) === null ||
+    (userIsLoggedIn$ | async) === undefined
+  "
+>
+  <p i18n>Συνδεθείτε για να δείτε</p>
+  <form (ngSubmit)="login()">
+    <label for="password" i18n>Κωδικός:</label>
+    <input
+      type="password"
+      id="password"
+      [(ngModel)]="password"
+      name="password"
+      required
+    />
+    <button type="submit" i18n>Είσοδος</button>
+  </form>
+</ng-container>
+<router-outlet></router-outlet>

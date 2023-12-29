@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4e1e1; /* light pink */
+  color: #305959; /* dark turquoise for contrast */
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #3ab7bf; /* turquoise */
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.loading {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.wedding-info-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.info-link {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f4e1e1; /* light pink */
+  color: #3ab7bf; /* turquoise */
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.info-link:hover {
+  background-color: #3ab7bf; /* turquoise */
+  color: white;
+}

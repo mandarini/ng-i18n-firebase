@@ -1,0 +1,120 @@
+{
+  "name": "katastasis",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "katastasis",
+  "sourceRoot": "./src",
+  "tags": [],
+  "i18n": {
+    "sourceLocale": "el",
+    "locales": {
+      "en": {
+        "translation": "src/locale/messages.en-US.json",
+        "baseHref": ""
+      }
+    }
+  },
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "localize": true,
+        "outputPath": "dist/katastasis",
+        "index": "./src/index.html",
+        "browser": "./src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "./tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "./src/favicon.ico",
+          "./src/assets",
+          "src/manifest.webmanifest"
+        ],
+        "styles": ["./src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all",
+          "serviceWorker": "ngsw-config.json"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        },
+        "en": {
+          "localize": ["en"]
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "katastasis:build:production"
+        },
+        "development": {
+          "buildTarget": "katastasis:build:development"
+        },
+        "en": {
+          "buildTarget": "katastasis:build:development,en"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "katastasis:build",
+        "format": "json",
+        "outputPath": "src/locale"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./src"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectName}"],
+      "options": {
+        "jestConfig": "jest.config.ts"
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "version": 2
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "katastasis:build:production",
+          "serveTarget": "katastasis:serve:production"
+        },
+        "development": {
+          "buildTarget": "katastasis:build:development",
+          "serveTarget": "katastasis:serve:development"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}

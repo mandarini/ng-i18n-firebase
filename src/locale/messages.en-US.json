@@ -1,0 +1,20 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "4858902117001058852": "Ελληνικά",
+    "5866254605255506989": "English",
+    "3704679554685941763": "Welcome to Katastasis!",
+    "5618920348805089987": "Please log in!",
+    "6132061082304185908": "Password:",
+    "3686036081866774336": "Enter",
+    "5465180690283688996": "This is our wedding website.",
+    "7784454877059673835": "September 7, 2024",
+    "689203476786339628": "Location: {$START_LINK}Ano Koufonisi{$CLOSE_LINK}",
+    "3977066521247759488": "Accommodation",
+    "6634462666358195707": "Getting to Koufonisi",
+    "7598658646744785029": "Venues",
+    "4325339317698818474": "Schedule",
+    "8240785445135866655": "RSVP",
+    "441982302891444066": "More info soon!"
+  }
+}
