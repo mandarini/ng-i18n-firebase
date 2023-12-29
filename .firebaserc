@@ -5,7 +5,7 @@
   "targets": {
     "test-ng-deeplinks": {
       "hosting": {
-        "deeplinkstest": [
+        "deeplinktest": [
           "test-ng-deeplinks"
         ]
       }

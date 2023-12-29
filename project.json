@@ -6,7 +6,10 @@
   "sourceRoot": "./src",
   "tags": [],
   "i18n": {
-    "sourceLocale": "en",
+    "sourceLocale": {
+      "code": "en",
+      "baseHref": ""
+    },
     "locales": {
       "el": {
         "translation": "src/locale/messages.el.json",
