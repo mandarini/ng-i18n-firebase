@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'katastasis-main',
+  selector: 'deeplinktest-main',
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './main.component.html',

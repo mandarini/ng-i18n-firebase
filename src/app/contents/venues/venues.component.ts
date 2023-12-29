@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'katastasis-venues',
+  selector: 'deeplinktest-venues',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './venues.component.html',

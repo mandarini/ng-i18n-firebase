@@ -7,12 +7,12 @@ import { CommonModule } from '@angular/common';
 @Component({
   standalone: true,
   imports: [RouterModule, FormsModule, CommonModule],
-  selector: 'katastasis-root',
+  selector: 'deeplinktest-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'katastasis';
+  title = 'deeplinktest';
   userIsLoggedIn$ = this.authService.userIsLoggedIn();
   password = '';
 

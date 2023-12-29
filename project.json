@@ -1,8 +1,8 @@
 {
-  "name": "katastasis",
+  "name": "deeplinktest",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "katastasis",
+  "prefix": "deeplinktest",
   "sourceRoot": "./src",
   "tags": [],
   "i18n": {
@@ -20,7 +20,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "localize": true,
-        "outputPath": "dist/katastasis",
+        "outputPath": "dist/deeplinktest",
         "index": "./src/index.html",
         "browser": "./src/main.ts",
         "polyfills": ["zone.js"],
@@ -66,13 +66,13 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "katastasis:build:production"
+          "buildTarget": "deeplinktest:build:production"
         },
         "development": {
-          "buildTarget": "katastasis:build:development"
+          "buildTarget": "deeplinktest:build:development"
         },
         "en": {
-          "buildTarget": "katastasis:build:development,en"
+          "buildTarget": "deeplinktest:build:development,en"
         }
       },
       "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "katastasis:build",
+        "buildTarget": "deeplinktest:build",
         "format": "json",
         "outputPath": "src/locale"
       }
@@ -106,12 +106,12 @@
       },
       "configurations": {
         "production": {
-          "buildTarget": "katastasis:build:production",
-          "serveTarget": "katastasis:serve:production"
+          "buildTarget": "deeplinktest:build:production",
+          "serveTarget": "deeplinktest:serve:production"
         },
         "development": {
-          "buildTarget": "katastasis:build:development",
-          "serveTarget": "katastasis:serve:development"
+          "buildTarget": "deeplinktest:build:development",
+          "serveTarget": "deeplinktest:serve:development"
         }
       },
       "defaultConfiguration": "production"

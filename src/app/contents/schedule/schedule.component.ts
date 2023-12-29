@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'katastasis-schedule',
+  selector: 'deeplinktest-schedule',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './schedule.component.html',

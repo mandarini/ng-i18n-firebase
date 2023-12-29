@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'katastasis',
+  displayName: 'deeplinktest',
   preset: './jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: './coverage/katastasis',
+  coverageDirectory: './coverage/deeplinktest',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

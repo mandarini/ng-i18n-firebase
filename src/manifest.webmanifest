@@ -1,6 +1,6 @@
 {
-  "name": "katastasis",
-  "short_name": "katastasis",
+  "name": "deeplinktest",
+  "short_name": "deeplinktest",
   "theme_color": "#f4e1e1",
   "background_color": "#fafafa",
   "display": "standalone",

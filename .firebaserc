@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "katastasis-wed"
+    "default": "deeplinktest-wed"
   },
   "targets": {
-    "katastasis-wed": {
+    "deeplinktest-wed": {
       "hosting": {
-        "katastasis": [
-          "katastasis-wed"
+        "deeplinktest": [
+          "deeplinktest-wed"
         ]
       }
     }

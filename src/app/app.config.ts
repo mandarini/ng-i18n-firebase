@@ -9,11 +9,11 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(appRoutes),
     importProvidersFrom(provideFirebaseApp(() => initializeApp({
-        projectId: 'katastasis-wed',
+        projectId: 'deeplinktest-wed',
         appId: '1:643885718313:web:f5ac353293a28c7ffcb538',
-        storageBucket: 'katastasis-wed.appspot.com',
+        storageBucket: 'deeplinktest-wed.appspot.com',
         apiKey: 'AIzaSyDN5pe_z-DdIMhfUEi7BBGcS20yWgT5Ny0',
-        authDomain: 'katastasis-wed.firebaseapp.com',
+        authDomain: 'deeplinktest-wed.firebaseapp.com',
         messagingSenderId: '643885718313',
         measurementId: 'G-N4LCMGGYEV',
     }))),

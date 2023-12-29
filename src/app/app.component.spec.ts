@@ -15,13 +15,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome katastasis'
+      'Welcome deeplinktest'
     );
   });
 
-  it(`should have as title 'katastasis'`, () => {
+  it(`should have as title 'deeplinktest'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('katastasis');
+    expect(app.title).toEqual('deeplinktest');
   });
 });
